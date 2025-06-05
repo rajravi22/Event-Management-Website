@@ -1,0 +1,359 @@
+.con{
+    background-image: url('https://www.vardaanhospitals.org/wp-content/themes/medical-circle/assets/img/medical.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between ;
+    background:linear-gradient(#6ab187,#fff);  
+   border-style: solid;
+   border-color:#9fd4a3;
+   border-radius: 7px;
+ border-width: 3px;
+ box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
+  padding: 10px 20px;
+    color: black;
+    font-size: 1rem; 
+    font-family:sans-serif ; 
+   
+}
+.navbar a:hover{
+    color: #008631;
+   text-decoration: underline;
+    transition:0.1s ;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* margin-bottom: 80px; */
+
+}
+.li{
+    text-decoration: none;
+    gap: 30px;
+    color:black;
+
+
+}
+.complogo{
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 2rem;
+
+}
+.logo1{
+    position: absolute;
+    margin-left: 4px;
+    /* color:#004b92; */
+    color:#033b73;
+    /* color: #2e6da4; */
+}
+.logo2{
+    position: absolute;
+    margin-top: 12px;
+    color:#025a22;
+    
+    
+}
+.logotext{
+    padding: 5%;
+    color: #00008b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+}
+.text2{
+    font-size: 0.6em;
+    color: #00008b;
+}
+
+
+  .bd {
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  .slider_container {
+    position: relative;
+    width: 95%;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+margin-bottom: 150px;
+  }
+  .slider {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 15s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+  }
+  .slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #7bc39c;
+    border-width: 8px;
+    border-radius: 8px;
+ 
+
+  }
+  .slide .caption {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    font-size: 5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.348);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  /* .slide.one {
+    background: rgb(182, 19, 109);
+  }
+  .slide.two {
+    background: rgb(255, 64, 64);
+  }
+  .slide.three {
+    background: rgb(11, 173, 188);
+  }
+  .slide.four {
+    background: rgb(11, 188, 14);
+  } */
+  /* .slide.five {
+    background: rgb(173, 11, 188);
+  }
+  .slide.six{
+    background: rgb(11, 173, 188);
+  } */
+  @keyframes sliding
+   {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+     100% {
+      transform: translateX(-400%);
+    }
+  }
+  
+  /* .navbar{
+    overflow: hidden;
+    background-color: #333;
+} */
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    color: #008631;
+    text-decoration: underline;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .button {
+    border: none;
+    color: black;
+    padding: 5px 5px;  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background-color: #7bc39c;
+   
+     border-style: solid;
+    border-color:#7bc39c;
+  } 
+  
+.button:hover{
+   transform: scale(0.8);
+}
+.con h2{
+      
+  padding-top: 60px;
+  padding-left:700px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #00008b;
+  padding-bottom: 30px;
+  font-size: 80px;
+  }
+  .gallery{
+    float: left;
+    /* border: 1px solid #6ab187; */
+    margin:10px;
+    width: 400px;
+    margin-left: 110px;
+    border-radius: 7px;
+    border-width: 5px;
+    transition: 1sec;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1,);
+    padding-top: 50px;
+    
+}
+.gallery .decs{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+h2{
+    text-align: center;
+    
+  
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: #4b4b4b;
+    font-weight: normal;
+    border-bottom: solid;
+   display: inline;
+   border-color: #6ab187;
+   margin-left: 700px;
+   padding-top: 90px;
+  
+
+
+ 
+   
+   
+    
+    
+}
+h6{
+    text-align: center;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6ab187;
+    padding-top: 30px;
+    padding-bottom: 20px;
+   
+  }
+
+
+
+.gallery:hover{
+    transform: scale(1.1);
+    
+}
+  
+  p{
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    padding-bottom: 130px;
+  }
+h4{
+  text-align: center;
+  padding-top: 20px;
+  color: #6ab187;
+  font-family: sans-serif;
+}
+p{
+  padding-top: 20px;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Planner - Event Management</title>
+    <link rel="stylesheet" href="plan.css">
+    
+</head>
+<body>
+    <header>
+        <img src="rel.png" alt="Event Management Services Logo" >
+        <h1>Plan The Event</h1>
+    </header>
+    <main>
+        <b><nav>
+            <a href="nt.html" class="nav-item">Home<i class="fa-solid fa-house"></i></a>
+            <a href="gallery.html" class="nav-item">Gallery<i class="fa-solid fa-image"></i></a>
+            <a href="aboutus.html" class="nav-item">About Us<i class="fa-regular fa-address-card"></i></a>
+            <a href="venue.html" class="nav-item">Venue<i class="fa-regular fa-campground"></i></a>
+            <a href="service.html" class="nav-item">Services<i class="fa-brands fa-servicestack"></i></a>
+            <a href="contactus.html" class="nav-item">Contact Us<i class="fa-regular fa-address-book"></i></a>
+            <a href="login.html" class="nav-item">Login<i class="fa-regular fa-right-to-bracket"></i></a>
+            <a href="register.html" class="nav-item">Register<i class="fa-brands fa-uniregistry"></i></a>
+        </nav></b>
+          <div class="dropdown">
+            <button class="dropbtn">INTENTION</button>
+            <div class="dropdown-content">
+              <a href="#event-details">Event Details</a>
+              <a href="#guest-management">Guest Management</a>
+              <a href="#timeline">Timeline</a>
+              <a href="#budgeting">Budgeting</a>
+              <a href="#vendor-management">Vendor Management</a>
+              <a href="#task-assignment">Task Assignment</a>
+              <a href="#checklists">Checklists</a>
+              <a href="#collaboration">Collaboration</a>
+              <a href="#reporting">Reporting</a>
+            </div>
+          </div>
+    <main>
+    
+          <section id="event-details">
+            <h2>Event Details</h2>
+            <form>
+              <label for="event-title">Event Title:</label>
+              <input type="text" id="event-title" name="event-title"><br><br>
+              <label for="event-description">Event Description:</label>
+              <textarea id="event-description" name="event-description"></textarea><br><br>
+              <label for="event-date">Event Date:</label>
+              <input type="date" id="event-date" name="event-date"><br><br>
+              <label for="event-time">Event Time:</label>
+              <input type="time" id="event-time" name="event-time"><br><br>
+              <label for="event-location">Event Location:</label>
+              <input type="text" id="event-location" name="event-location"><br><br>
+              <label for="event-type">Event Type:</label>
+              <select id="event-type" name="event-type">
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate</option>
+                <option value="birthday">Birthday</option>
+                <option value="other">Other</option>
+              </select><br><br>
+              <label for="event-theme">Event Theme:</label>
+              <input type="text" id="event-theme" name="event-theme"><br><br>
+            </form>
+          </section>
+          <section id="guest-management">
+            <h2>Guest Management</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Guest Name</th>
+                  <th>RSVP Status</th>
+                  <th>Dietary Restrictions</th>
+                  <th>Contact Information</th>
+                  <th>Accommodations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Guest list will be populated here -->
+              </tbody>
+            </table>
+            <button id="add-guest">Add Guest</button>
+            <div id="guest-form" style="display: none;">
+              <form>
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" name="guest-name"><br><br>
+                <label for="guest-email">Guest Email:</label>
+                <input type="email" id="guest-email" name="guest-email"><br><br>
+                <label for="guest-phone">Guest Phone:</label>
+                <input type="tel" id="guest-phone" name="guest-phone"><br><br>
+                <label for="guest-dietary">Dietary Restrictions:</label>
+                <textarea id="guest-dietary" name="guest-dietary"></textarea><br><br>
+                <label for="guest-accommodations">Accommodations:</label>
+                <textarea id="guest-accommodations" name="guest-accommodations"></textarea><br><br>
+                <button id="save-guest">Save Guest</button>
+              </form>
+            </div>
+          </section>
+          <section id="timeline">
+            <h2>Timeline</h2>
+            <ul>
+              <!-- Timeline events will be populated here -->
+            </ul>
+            <button id="add-event">Add Event</button>
+            <div id="event-form" style="display: none;">
+              <form>
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date"><br><br>
+                <label for="event-time">Event Time:</label>
+                <input type="time" id="event-time" name="event-time"><br><br>
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description"></textarea><br><br>
+                <button id="save-event">Save Event</button>
+              </form>
+            </div>
+          </section>
+          <section id="budgeting">
+            <h2>Budgeting</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Budget Allocation</th>
+                  <th>Actual Spend</th>
+                  <th>Variance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Budget categories will be populated here -->
+              </tbody>
+            </table>
+            <button id="add-category">Add Category</button>
+            <div id="category-form" style="display: none;">
+              <form>
+                <label for="category-name">Category Name:</label>
+                <input type="text" id="category-name" name="category-name"><br><br>
+                <label for="budget-allocation">Budget Allocation:</label>
+                <input type="number" id="budget-allocation" name="budget-allocation"><br><br>
+                <button id="save-category">Save Category</button>
+              </form>
+            </div>
+          </section>
+          <section id="vendor-management">
+            <h2>Vendor Management</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Vendor Name</th>
+                  <th>Contact Information</th>
+                  <th>Rating</th>
+                  <th>Services</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Vendor list will be populated here -->
+              </tbody>
+            </table>
+            <button id="add-vendor">Add Vendor</button>
+            <div id="vendor-form" style="display: none;">
+              <form>
+                <label for="vendor-name">Vendor Name:</label>
+                <input type="text" id="vendor-name" name="vendor-name"><br><br>
+                <label for="vendor-email">Vendor Email:</label>
+                <input type="email" id="vendor-email" name="vendor-email"><br><br>
+                <label for="vendor-phone">Vendor Phone:</label>
+                <input type="tel" id="vendor-phone" name="vendor-phone"><br><br>
+                <label for="vendor-rating">Vendor Rating:</label>
+                <input type="number" id="vendor-rating" name="vendor-rating"><br><br>
+                <label for="vendor-services">Vendor Services:</label>
+                <textarea id="vendor-services" name="vendor-services"></textarea><br><br>
+              </form>
+            </div>
+          </section>
+            <section id="task-assignment">
+                <h2>Task Assignment</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Task Name</th>
+                      <th>Assigned To</th>
+                      <th>Due Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Task list will be populated here -->
+                  </tbody>
+                </table>
+                <button id="add-task">Add Task</button>
+                <div id="task-form" style="display: none;">
+                  <form>
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" id="task-name" name="task-name"><br><br>
+                    <label for="assigned-to">Assigned To:</label>
+                    <select id="assigned-to" name="assigned-to">
+                      <!-- User list will be populated here -->
+                    </select><br><br>
+                    <label for="due-date">Due Date:</label>
+                    <input type="date" id="due-date" name="due-date"><br><br>
+                    <button id="save-task">Save Task</button>
+                  </form>
+                </div>
+              </section>
+              
+              <section id="checklists">
+                <h2>Checklists</h2>
+                <ul>
+                  <!-- Checklist items will be populated here -->
+                </ul>
+                <button id="add-checklist-item">Add Checklist Item</button>
+                <div id="checklist-form" style="display: none;">
+                  <form>
+                    <label for="checklist-item">Checklist Item:</label>
+                    <input type="text" id="checklist-item" name="checklist-item"><br><br>
+                    <button id="save-checklist-item">Save Checklist Item</button>
+                  </form>
+                </div>
+              </section>
+              
+              <section id="collaboration">
+                <h2>Collaboration</h2>
+                <div id="collaboration-chat">
+                  <!-- Chat log will be populated here -->
+                </div>
+                <form id="collaboration-form">
+                  <label for="message">Message:</label>
+                  <input type="text" id="message" name="message"><br><br>
+                  <button id="send-message">Send Message</button>
+                </form>
+              </section>
+              
+              <section id="reporting">
+                <h2>Reporting</h2>
+                <div id="reporting-dashboard">
+                  <!-- Reporting dashboard will be populated here -->
+                </div>
+                <button id="generate-report">Generate Report</button>
+              </section>
+        
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section contact-info">
+              <a href="contactus.html"><h3>Contact Us</h3></a>
+              <p>Phone:678458393</p>
+              <p>Email: info@evento.com</p>
+              <p>Address: Lalpur Chowk</p>
+          </div>
+          <div class="footer-section social-media">
+              <h3>Follow Us</h3>
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer-section newsletter">
+              <h3>Newsletter</h3>
+              <form>
+                  <input type="email" placeholder="Your Email">
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+          <div class="footer-section legal-info">
+              <h3>Legal</h3>
+              <a href="privacy.html">Privacy Policy</a><br>
+              <a href="TOS.html">Terms of Service</a><br>
+              <a href="cookie.html">Cookie Policy</a><br>
+              <a href="contactus.html#faq">FAQ</a>
+          </div>
+          <div class="footer-section sitemap">
+              <h3>Sitemap</h3>
+              <a href="eevent.html">Home</a><br>
+              <a href="aboutus.html">About Us</a><br>
+              <a href="service.html">Services</a><br>
+              
+              <a href="v">Blog</a><br>
+              <a href="contactus.html">Contact Us</a><br>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
